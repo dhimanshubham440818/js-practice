@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // parent function
+        var a=function (){
+             this.x=10;
+        }
+        a.prototype.z=20;
+        // child function 
+        var b= function (){
+            // call parent function 
+            a.call(this);
+            this.y=15;
+        }
+        // prototype object inheritance code 
+        b.prototype=Object.create(a.prototype);
+        b.prototype.constructor=b;
+
+        var obj= new b();
+        document.write(obj.x+"<br>");
+        document.write(obj.y+"<br>");
+        document.write(obj.z+"<br>");
+        // how access parent class prototype property
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

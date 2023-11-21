@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var object ={
+            id:1200,
+            status:200,
+        }
+        // way 1 to check property exist or not
+        if(object.response!=undefined){
+            document.write("exist")
+        }else{
+            document.write("not exist")
+        }
+document.write("<br>")
+        // way 2 to check property exist or not
+        if(object.hasOwnProperty('response')){
+            document.write("exist")
+        }else{
+            document.write("not exist")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

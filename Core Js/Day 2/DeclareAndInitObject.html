@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // object declaration and intialization with object literal way 1
+        var person = {
+            name: "Shubham",
+            age: 23,
+            address: function () {
+                document.write("818 indira colony Mzn");
+            }
+        }
+        document.write(person.name + " " + person.age);
+        document.write(person.address());
+        document.write("<br>")
+        // declaration and intialization with object literal way 2
+        var person1 = {};
+        person1['name'] = "Amit";
+        person1['age'] = 26;
+        person1['address'] = function () {
+            document.write("jaipur");
+        }
+        document.write(person1.name + " " + person1.age);
+        document.write(person1.address());
+        document.write("<br>")
+      
+        // declaration and intializate object using object construct
+        var man= new Object();
+        man['id']=101;
+        man["work type"] ="from home";
+        document.write(man.id);
+        document.write(man["work type"]);
+        document.write("<br>")
+        </script>
+
+<body>
+
+</body>
+
+</html>

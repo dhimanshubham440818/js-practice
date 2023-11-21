@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // parent constructor function
+        function mobile(){}
+        mobile.prototype.show=function (){
+            return "mobile constructor method";
+        }
+        // child constructor function
+        function samsung(){}
+        samsung.prototype.show=function (){
+            return "samsung constructor method";
+        }
+        // prototype code 
+        function extend(Child,Parent){
+            Child.prototype= Object.create(Parent.prototype);
+            Child.prototype.constructor=Child;
+        }
+        extend(samsung,mobile);
+        
+        // create instance 
+        var c1= new samsung();
+        document.write(c1.show()+"<br>");
+        var m1= new mobile();
+        document.write(m1.show());
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

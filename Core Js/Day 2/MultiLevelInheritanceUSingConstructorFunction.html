@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function mobile (){
+            this.x=10;
+        }
+        function samsung (){
+            mobile.call(this);
+            this.y=20;
+        }
+        function galaxy (){
+            samsung.call(this);
+            this.z=10;
+        }
+        samsung.prototype =Object.create(mobile.prototype);
+        samsung.prototype.constructor=samsung;
+        galaxy.prototype = Object.create(samsung.prototype);
+        galaxy.prototype.constructor=galaxy;
+
+        var g= new galaxy();
+        var m=new mobile();
+        var s= new samsung();
+
+        document.write("galaxy instance<br>");
+        document.write("x="+g.x+" y="+g.y+" z="+g.z+"<br>");
+        
+        document.write("samsung instance<br>");
+        document.write("x="+s.x+" y="+s.y+" z="+s.z+"<br >");
+        
+        document.write("mobile instance<br>");
+        document.write("x="+m.x+" y="+m.y+" z="+m.z+"<br >");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

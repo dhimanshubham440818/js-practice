@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var eating = {
+            eat: function () {
+                return "I can eat";
+            }
+        }
+        var walking = {
+            walk: function () {
+                return "I can walk";
+            }
+        }
+        var talking = {
+            talk: function () {
+                return "I can talk";
+            }
+        }
+        var starting = {
+            start: function () {
+                return "click and start";
+            }
+        }
+        // composition way 1
+        function human(){}
+        Object.assign(human.prototype, walking, talking, eating)
+        var rahul = new human;
+        document.write("WHAT Can A HUMAN do ????<br>");
+        document.write(rahul.eat()+"<br>");
+        document.write(rahul.walk()+"<br>");
+        document.write(rahul.talk()+"<br>");
+
+        // compostion way 2
+        var roboot = Object.assign({}, walking, talking, starting);
+        document.write("WHAT Can A ROBOOT do ????<br>");
+        document.write(roboot.walk()+"<br>");
+        document.write(roboot.talk()+"<br>");
+        document.write(roboot.start()+"<br>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

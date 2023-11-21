@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class parent{
+        fMoney(){
+            return "perent money<br>";
+        }
+        }
+        class child extends parent{
+        cMoney(){
+            return "Child money<br>";
+        }
+        }
+        var obj=new child();
+        document.write(obj.fMoney());
+        document.write(obj.cMoney());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

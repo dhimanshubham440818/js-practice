@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class parent{
+            
+        display(){
+            return "parent display";
+        }
+        }
+        class child extends parent{
+            display(){
+            return "child display";
+        }        }
+        var obj=new child();
+        document.write(obj.display());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

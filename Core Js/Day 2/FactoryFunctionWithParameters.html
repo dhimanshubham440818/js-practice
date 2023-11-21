@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function sim(cName){
+            return {
+                cname:cName,
+                id:101,
+                price: function(){
+                    return "price is 1000";
+                }
+            }
+        }
+        var samsung = sim("Airtel");
+        var realme= sim("Jio");
+        document.write(samsung.cname+samsung.id+" "+samsung.price());
+        document.write("<br>");
+        document.write(realme.cname+realme.id+" "+realme.price());
+        document.write("<br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

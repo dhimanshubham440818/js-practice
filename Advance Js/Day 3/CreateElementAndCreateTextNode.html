@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="first">
+    <script>
+
+        var ele = document.createElement("h1");
+        var text = document.createTextNode("this is heading");
+        var comment = document.createComment("this is comment");
+        ele.appendChild(text);
+        ele.appendChild(comment);
+        console.log(ele);
+        var targetNode = document.getElementById("first");
+        console.log(targetNode);
+        targetNode.appendChild(ele);
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="refId">
+    <h1 id="firstId">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, praesentium.</p>
+    </h1>
+    <script>
+
+        // insertBefore
+        var ele = document.createElement("h1");
+        ele.textContent = "this is content";
+        var target = document.getElementById("firstId");
+        var refElement = document.getElementById("refId");
+        refElement.insertBefore(ele, target);
+
+        // insertAdjecent
+        var ele = document.createElement("h1");
+        ele.textContent = "this is content";
+        var target = document.getElementById("firstId");
+        var refElement = document.getElementById("refId");
+        refElement.insertAdjacentElement("beforebegin", target);
+
+        
+        // insertAdjecent
+        var ele = document.createElement("h1");
+        ele.textContent = "this is content";
+        var target = document.getElementById("firstId");
+        var refElement = document.getElementById("refId");
+        refElement.insertAdjacentElement("afterend", target);
+
+        
+
+        
+    </script>
+</body>
+</html>

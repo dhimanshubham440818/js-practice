@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="first" class="second">heading</h1>
+    <script>
+        var target = document.getElementById("first");
+        console.log(target.attributes);
+        console.log(target.id);
+        target.setAttribute("name", "myName");
+        target.removeAttribute("class");
+    </script>
+</body>
+</html>

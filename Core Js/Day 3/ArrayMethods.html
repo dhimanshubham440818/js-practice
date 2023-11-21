@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a1 = [1, 2, 3, 4, 5];
+        var a2 = [6, 7, 8, 9, 0]
+        document.write(a1 + "<br>");
+        document.write(a2 + "<br>");
+
+        // concat add two array and retrun new array
+        document.write("concat method<br>");
+        var a3 = a1.concat(a2);
+        document.write(a3 + "<br>");
+
+        // join add two array and retrun new string
+        document.write("join method<br>");
+        var a3 = a1.join(a2);
+        document.write(a3 + "<br>");
+
+        // reverse used  to reverse
+        document.write("reverse method<br>");
+        a1.reverse();
+        document.write(a1 + "<br>");
+
+        // slice used  to take a slice or spacific part of an array
+        document.write("slice method<br>");
+        var slice1 = a2.slice(3);
+        document.write(slice1 + "<br>");
+
+        // tostring used  to retrun array as a string with comma sperated
+        document.write("toString method<br>");
+        var str1 = a2.toString();
+        document.write(str1 + "<br>");
+
+        // ArrayIsArray used  to determine array is a array
+        document.write("ArrayIsArray method<br>");
+        document.write(Array.isArray(a3) + "<br>");
+
+        // splice used  to remove element from an array according to index bases
+        document.write("splice method<br>");
+        a1.splice(1, 2);
+        document.write(a1 + "<br>");
+
+        // indexOf used  to find the occurenece element into an array
+        document.write("IndexOf method<br>");
+        document.write(a1.indexOf(1) + "<br>");
+
+        // fill used  to find the occurenece element into an array
+        document.write("fill method<br>");
+        a1.fill("ram", 1, 3);
+        document.write(a1 + "<br>");
+
+        // Unshift used  to add element from starting of an Array and return new lenthg of an Array
+        document.write("Unshift method<br>");
+        a1.unshift("Don");
+        document.write(a1 + "<br>");
+
+        // shift used  to remove element from starting of an Array and return new lenthg of an Array
+        document.write("shift method<br>");
+        a1.shift();
+        document.write(a1 + "<br>");
+// push used  to add element from ending of an Array and return new lenthg of an Array
+document.write("push method<br>");
+        a1.push("abc");
+        document.write(a1 + "<br>");
+// pop used  to remove element from ending of an Array and return new lenthg of an Array
+document.write("pop method<br>");
+        a1.pop();
+        document.write(a1 + "<br>");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ele1 = document.createElement("h1");
+        var ele2 = document.createElement("p");
+        var ele3 = document.createElement("div");
+        
+        ele1.textContent="heading content";
+        ele2.textContent="paragraph content";
+        ele3.textContent="div content";
+        
+        var df = document.createDocumentFragment();
+        df.appendChild(ele1);
+        df.appendChild(ele2);
+        df.appendChild(ele3);
+
+        document.body.appendChild(df);
+    </script>
+</body>
+</html>

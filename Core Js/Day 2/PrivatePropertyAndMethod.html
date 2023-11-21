@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun1(){
+            // private varible
+            var privateVarible1=110;
+            var privateVarible2="string";
+            // private method
+            var f1=function (){
+                document.write("private method");
+            }
+        }
+        fun1();
+        // private method not access here
+        document.write(privateVarible1);
+        
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
